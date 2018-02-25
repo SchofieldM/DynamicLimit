@@ -37,10 +37,17 @@ public class Table {
 		return row;
 	}
 	
+	public void update(int column, int row, int newVal)
+	{
+		ArrayList<Integer> newColumn = table.get(column);
+		newColumn.set(row, newVal);
+		table.set(column, newColumn);
+	}
+	
 	public void display()
 	{
 		for(int i = 0; i < table.size();i++) {
-			System.out.print(columnNames.get(i));
+			System.out.print(columnNames.get(i) + " |");
 			for(int k = 0; k < table.get(i).size(); k++) {
 				System.out.print(table.get(i).get(k) + " | ");
 			}

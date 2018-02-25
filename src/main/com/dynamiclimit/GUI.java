@@ -2,7 +2,7 @@ package main.com.dynamiclimit;
 
 
 //Java Lang
- // swing
+	// swing
          import javax.swing.*;
          import java.awt.*;
          import java.awt.event.*;
@@ -56,10 +56,15 @@ public class GUI extends JPanel{
 		g.drawString("SL: " + Integer.toString(city.getServer().getDb().getTable("RS4RCToSL").getRow(city.getServer().getRoadConditions()).get(0)), 320, 575);
 		g.drawString("RS: 4", 320, 600);
 
+
+		fontSize = 50;
+		g.setFont(new Font("TimesRoman", Font.PLAIN, fontSize)); 
+		g.drawString(city.getName(), 550, 50);
+		
 		g.setFont(new Font("TimesRoman", Font.PLAIN, 15)); 
 		g.drawString("Key: ", 0, 25);
 		g.drawString("SL - Speed Limit, RS - Road Segment ", 0, 50);
-		g.drawString("Conditions - A numeric value 1(Worst) - 10(Best)", 0, 75);
+		g.drawString("Conditions - A numeric value 0(Worst) - 10(Best)", 0, 75);
 		g.drawString("      to represent road conditions/weather/time", 0, 100);
 		g.drawString("      and thereby calculate appropriate speed limits", 0, 125);
 		

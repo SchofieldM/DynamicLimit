@@ -25,6 +25,8 @@ public class City {
 		private int nextCarID;
 	// Random
 		private Random rand;
+	// String
+		private String name;
 	
 // Constructors
 	/**
@@ -47,6 +49,8 @@ public class City {
 
 		// The ID of the next car to create
 		nextCarID = 1;
+		
+		this.name = name;
 		
 		// Start the city with 3 cars: car1, car2, car3
 		for(int i = 1; i < 4; i++) 
@@ -79,17 +83,22 @@ public class City {
 		return cars.size();
 	}
 	
+	public String getName()
+	{
+		return name;
+	}
+	
 	public void removeCar()
 	{
 		if(cars.size() == 1) {
-			return;
+			addCar();
+		}else {			
+			Car carToLeave = cars.get(rand.nextInt(cars.size()));
+			cars.remove(carToLeave);
+			carToLeave.leaveCity();
 		}
-			
-		Car carToLeave = cars.get(rand.nextInt(cars.size()));
-		cars.remove(carToLeave);
-		carToLeave.leaveCity();
 	}
-	
+		
 	public Server getServer()
 	{
 		return server;

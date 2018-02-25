@@ -128,7 +128,7 @@ public class Server {
 		double b = .05;
 		double a = 100000.0*(rate*rate*rate);
 		double timeSquared = (time-12.0)*(time-12.0);
-		roadCondition = (int) ( ((1.0 - (a)*timeSquared + b) )* weatherValue());
+		roadCondition = (int) ( ((1.0 - (a)*timeSquared) )* weatherValue());
 		System.out.println("Road condition: " + roadCondition);
 	}
 	

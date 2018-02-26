@@ -9,6 +9,13 @@ import java.util.Random;
 import main.com.dynamiclimit.database.PsuedoDatabase;
 import main.com.dynamiclimit.database.Table;
 
+
+/**
+ * Server that handles most of the operations of the program
+ * 
+ * @author Matthew Schofield
+ * @version 2.26.18
+ */
 public class Server {
 
 	private int roadCondition;
@@ -40,7 +47,7 @@ public class Server {
 		  		updateTopLevelTable();
 		  		updateEachRCToSL();
 		      } 
-		    }, 1500, 1000); 
+		    }, 100, 3300); 
 	  } 
 	
 	public PsuedoDatabase getDb()

@@ -4,6 +4,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Random;
 
+/**
+ *  A car object for simulation use of the city
+ *  
+ * @author Matthew Schofield
+ * @version 2.26.18
+ */
 public class Car {
 
 	private int currentRoadSegment;
@@ -31,7 +37,7 @@ public class Car {
 		  		targetSpeed = server.request(currentRoadSegment);
 		  		System.out.println(name + "'s target speed: " + targetSpeed + " on road segment " + currentRoadSegment);
 		    } 
-		 }, 1000, 1000); 
+		 }, 2500, 2500); 
 	}
 	
 	public String getName()

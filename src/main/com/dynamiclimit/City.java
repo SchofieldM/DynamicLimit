@@ -10,8 +10,9 @@ import main.com.dynamiclimit.Car;
 import main.com.dynamiclimit.Server;
 
 /**
+ * For simulation of the system
  * 
- * 
+ * @author Matthew Schofield
  * @version 2.24.18
  */
 public class City {

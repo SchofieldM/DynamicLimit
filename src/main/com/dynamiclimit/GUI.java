@@ -9,6 +9,12 @@ package main.com.dynamiclimit;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * A GUI to show a simualtion of the system
+ * 
+ * @author Matthew Schofield
+ * @version 2.26.18
+ */
 public class GUI extends JPanel{
 	private City city;
 	

@@ -6,6 +6,12 @@ import javax.swing.WindowConstants;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+/**
+ * Begins the demostration
+ * 
+ * @author Matthew Schofield
+ *@version 2.26.18
+ */
 public class Start {
 
 	

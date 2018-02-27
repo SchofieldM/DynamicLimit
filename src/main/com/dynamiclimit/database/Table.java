@@ -2,6 +2,12 @@ package main.com.dynamiclimit.database;
 
 import java.util.ArrayList;
 
+/**
+ * Tables to store data in a database
+ * 
+ * @author Matthew Schofield
+ * @version 2.27.18
+ */
 public class Table {
 
 	private ArrayList<ArrayList<Integer>> table;

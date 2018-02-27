@@ -5,6 +5,12 @@ import java.util.Random;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * To simulate a database for the purposes of this project
+ * 
+ * @author Matthew Schofield
+ * @version 2.27.18
+ */
 public class PsuedoDatabase {
 	
 	private HashMap<String, Table> tables;

@@ -7,15 +7,22 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 /**
- * Begins the demostration
+ * Begins the demonstration
  * 
  * @author Matthew Schofield
  *@version 2.26.18
  */
 public class Start {
 
-	
-	private static JFrame mainWindow;
+// Fields
+	// JFrame
+		private static JFrame mainWindow;
+		
+	/**
+	 * Entrance point of the program
+	 * 
+	 * @param args, currently unused
+	 */
 	public static void main(String[] args)
 	{
 		
